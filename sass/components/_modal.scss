@@ -1,0 +1,255 @@
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  transition: $transition;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  z-index: 110;
+
+  transition: $transition;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 40px;
+
+  transform: translate3d(-50%, -50%, 0);
+
+  background-color: $whiteColorText;
+  text-align: center;
+
+  z-index: 111;
+
+  @media screen and (min-width: 480px) and (max-width: 1229px) {
+    width: 450px;
+    height: 609px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    min-width: 528px;
+    height: 581px;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (max-height: 609px) {
+    height: 100%;
+  }
+}
+
+.modal-title {
+  @include font(700, 20px, 1.5);
+
+  color: $secondaryTextColor;
+
+  @media screen and (min-width: 1230px) {
+    @include font(700, 20px, 1.15);
+  }
+}
+
+.modal .icon-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  z-index: 112;
+}
+
+.form .button {
+  margin-top: 30px;
+
+  @media screen and (max-height: 609px) {
+    margin-top: 5px;
+  }
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-top: 28px;
+}
+
+.form-input {
+  display: block;
+  width: 370px;
+  height: 40px;
+
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @media screen and (min-width: 1230px) {
+    width: 448px;
+    height: 40px;
+  }
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-26px, -32px);
+  transition: $transition;
+
+  @include font(400, 12px, 1.17);
+
+  color: $textHoverColor;
+}
+
+.field:focus-within > .form-icon,
+.form-input:not(:placeholder-shown) + .form-icon {
+  fill: $textHoverColor;
+
+  transition: $transition;
+}
+
+.form-label {
+  position: absolute;
+  top: 12px;
+  left: 42px;
+
+  @include font(400, 14px, 1.14, 0.01em);
+
+  transition: $transition;
+
+  .field:focus-within > & {
+    transform: translate(-26px, -32px);
+    transition: $transition;
+
+    font-size: 12px;
+    line-height: 1.17;
+    color: $textHoverColor;
+  }
+}
+
+.icon-person,
+.icon-phone,
+.icon-email {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 11px;
+  left: 16px;
+}
+
+.comment {
+  display: block;
+  resize: none;
+  width: 370px;
+  height: 120px;
+
+  padding-left: 16px;
+  padding-top: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @media screen and (min-width: 1230px) {
+    width: 448px;
+  }
+
+  @media screen and (max-height: 609px) {
+    height: 30px;
+  }
+}
+
+.com {
+  top: 12px;
+  left: 16px;
+  transition: $transition;
+
+  .field:focus-within > & {
+    @include font(400, 12px, 1.17);
+
+    color: $textHoverColor;
+
+    transform: translateY(-32px);
+    transition: $transition;
+  }
+}
+
+.comment:not(:placeholder-shown) + .com {
+  @include font(400, 12px, 1.17);
+
+  color: $textHoverColor;
+
+  transform: translateY(-32px);
+  transition: $transition;
+}
+
+.name {
+  margin-top: 30px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chec {
+  color: $textHoverColor;
+  text-decoration: underline;
+}
+
+.icn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 1.5px solid #2a2a2a;
+  border-radius: 1px;
+
+  transition: $transition;
+
+  @media screen and (max-width: 479px) {
+    min-width: 15px;
+    min-height: 15px;
+  }
+}
+
+.checkbox:checked + .icn {
+  transform: scale(1.2);
+  border-color: transparent;
+  background-image: url(../../images/check.svg);
+  background-color: $textHoverColor;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox-label {
+  @include font(400, 12px, 1.17);
+
+  @media screen and (min-width: 1230px) {
+    @include font(400, 14px, 1.71);
+  }
+}

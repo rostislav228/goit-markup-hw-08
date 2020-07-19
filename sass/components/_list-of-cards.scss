@@ -1,0 +1,140 @@
+.portfolio {
+  border-top: 1px solid #ececec;
+}
+
+.job-title {
+  color: $secondaryTextColor;
+  @include font(700, 18px, 2);
+}
+
+.text-work {
+  color: $primaryTextColor;
+  @include font(400, 16px, 1.87);
+
+  margin-top: 4px;
+}
+
+.hover-text-work {
+  position: absolute;
+  bottom: 0px;
+  transform-origin: bottom center;
+  transform: translate3d(0, 100%, 0);
+
+  width: 100%;
+  height: 100%;
+  padding: 77px 24px;
+
+  color: $whiteColorText;
+  background: rgba(33, 150, 243, 0.9);
+  @include font(400, 18px, 1.56);
+
+  transition: $transition;
+
+  .card:hover & {
+    transform: translate3d(0, 0, 0);
+
+    transition: $transition;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    padding: 63px 24px;
+  }
+}
+
+.card-picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-picture img {
+  width: 450px;
+  height: 294px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 370px;
+  }
+}
+
+.work {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.work .element {
+  //   max-width: calc((100%-60px) / 3);
+
+  margin-top: 30px;
+
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+
+    transition: $transition;
+  }
+
+  &:nth-child(-n + 1) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    margin-right: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  &:nth-child(3n) {
+    @media screen and (min-width: 1230px) {
+      margin-right: 0px;
+    }
+  }
+
+  &:nth-child(-n + 3) {
+    @media screen and (min-width: 1230px) {
+      margin-top: 0px;
+    }
+  }
+}
+
+.card > a {
+  display: block;
+}
+
+.card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.card-contens {
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}

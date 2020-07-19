@@ -1,0 +1,128 @@
+.flex-featurest {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-featurest .element {
+  width: 450px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 270px;
+    margin-right: 30px;
+  }
+}
+
+.section-title.features {
+  color: $secondaryTextColor;
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.text.features {
+  @include font(400, 14px, 1.71);
+
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  @include icon(antenna, 450px, 120px);
+  background-color: $secondaryBackgroundColor;
+
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 479px) {
+    @include icon(antenna, 100%, 120px);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include icon(antenna, 354px, 120px);
+  }
+
+  @media screen and (min-width: 1230px) {
+    @include icon(antenna, 270px, 120px);
+  }
+}
+
+.icon-clock::before {
+  @include icon(clock, 450px, 120px);
+  background-color: $secondaryBackgroundColor;
+
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 479px) {
+    @include icon(clock, 100%, 120px);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include icon(clock, 354px, 120px);
+  }
+
+  @media screen and (min-width: 1230px) {
+    @include icon(clock, 270px, 120px);
+  }
+}
+
+.icon-diagram::before {
+  @include icon(diagram, 450px, 120px);
+  background-color: $secondaryBackgroundColor;
+
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 479px) {
+    @include icon(diagram, 100%, 120px);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include icon(diagram, 354px, 120px);
+  }
+
+  @media screen and (min-width: 1230px) {
+    @include icon(diagram, 270px, 120px);
+  }
+}
+
+.icon-astronaut::before {
+  @include icon(astronaut, 450px, 120px);
+  background-color: $secondaryBackgroundColor;
+
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 479px) {
+    @include icon(astronaut, 100%, 120px);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include icon(astronaut, 354px, 120px);
+  }
+
+  @media screen and (min-width: 1230px) {
+    @include icon(astronaut, 270px, 120px);
+  }
+}

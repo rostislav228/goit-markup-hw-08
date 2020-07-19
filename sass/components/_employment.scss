@@ -1,0 +1,43 @@
+.employment {
+  border-top: 1px solid #ececec;
+
+  @media screen and (max-width: 1229px) {
+    display: none;
+  }
+}
+
+.employment-list {
+  display: flex;
+}
+
+.employment-list,
+.specialists {
+  margin-top: 50px;
+}
+
+.employment-list .element {
+  position: relative;
+
+  width: 370px;
+  margin-right: 30px;
+}
+
+.employment-list .element:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.employment-list .link {
+  position: absolute;
+  bottom: 0px;
+
+  display: inline-block;
+  padding: 27px 0px;
+  width: 370px;
+  text-align: center;
+
+  color: $whiteColorText;
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

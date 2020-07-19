@@ -1,0 +1,127 @@
+.customers {
+  justify-content: center;
+  margin-top: 30px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1229px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1230px) {
+    margin-top: 50px;
+  }
+}
+
+.customers .element {
+  margin-right: 30px;
+  width: 210px;
+  height: 90px;
+
+  transition: $transition;
+
+  @media screen and (max-width: 479px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 30px;
+
+    &:nth-child(n + 6) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-child(n + 5) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    margin-bottom: 30px;
+    width: 226px;
+    height: 90px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+.customers-link {
+  display: block;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 210px;
+  height: 90px;
+
+  transition: $transition;
+
+  &:focus {
+    border-color: $textHoverColor;
+    fill: $textHoverColor;
+
+    transition: $transition;
+  }
+
+  .customers &:hover {
+    border-color: $textHoverColor;
+    fill: $textHoverColor;
+
+    transition: $transition;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+.icon {
+  width: 210px;
+  height: 90px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 90px;
+  }
+  @media screen and (min-width: 1230px) {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+#icon-logo-1,
+#icon-logo-2,
+#icon-logo-3,
+#icon-logo-4,
+#icon-logo-5,
+#icon-logo-6 {
+  fill: currentColor;
+}
+
+.customers .element:nth-child(6n) {
+  @media screen and (min-width: 1230px) {
+    margin-right: 0px;
+  }
+}

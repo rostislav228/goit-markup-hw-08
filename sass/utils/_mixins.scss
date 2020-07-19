@@ -1,0 +1,25 @@
+@mixin icon($name, $width: 270px, $height: 120px) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+  background-image: url(../images/#{$name}.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin font(
+  $font-weight: 400,
+  $font-size: 14,
+  $line-height: 1.14,
+  $letter-spacing: 0.03em,
+  $text-align: start
+) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $text-align;
+  letter-spacing: $letter-spacing;
+}
