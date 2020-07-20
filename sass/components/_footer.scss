@@ -6,12 +6,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 1229px) {
+  @media screen and (max-width: 1199px) {
     align-items: center;
     text-align: center;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -24,7 +24,7 @@
   @include font(700, 24px, 1.17, 0.03em);
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.19);
   }
   font-family: Raleway, sans-serif;
@@ -34,11 +34,11 @@
   color: $whiteColorText;
   @include font(400, 14px, 1.71, 00.03em, center);
 
-  @media screen and (max-width: 1229px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
   }
@@ -47,7 +47,7 @@
 .address-text {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
@@ -59,12 +59,12 @@
   &:not(:last-child) {
     margin-bottom: 8px;
 
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 9px;
     }
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     display: inline-flex;
   }
 }
@@ -87,7 +87,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 1229px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }
@@ -144,11 +144,11 @@
     width: 450px;
   }
 
-  @media screen and (max-width: 1229px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     padding-left: 16px;
   }
@@ -166,7 +166,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -216,19 +216,19 @@
     display: flex;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
   }
 }
 
 .footer-div {
-  @media screen and (min-width: 768px) and (max-width: 1229px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
 
   &:last-child {
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -236,7 +236,7 @@
 }
 
 .flex {
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }

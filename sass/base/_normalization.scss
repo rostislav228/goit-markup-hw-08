@@ -74,8 +74,8 @@ img {
     width: 768px;
   }
 
-  @media screen and (min-width: 1230px) {
-    width: 1230px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -84,7 +84,7 @@ img {
   color: $secondaryTextColor;
   text-align: center;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     @include font(700, 36px, 1.17);
     text-align: center;
   }
@@ -94,7 +94,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

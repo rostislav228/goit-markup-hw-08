@@ -40,7 +40,7 @@
     padding: 49px 24px;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     padding: 63px 24px;
   }
 }
@@ -58,7 +58,7 @@
     width: 354px;
   }
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 1200px) {
     width: 370px;
   }
 }
@@ -95,7 +95,7 @@
     margin-right: 30px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1229px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 30px;
 
     &:nth-child(2n) {
@@ -104,13 +104,13 @@
   }
 
   &:nth-child(3n) {
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 0px;
     }
   }
 
   &:nth-child(-n + 3) {
-    @media screen and (min-width: 1230px) {
+    @media screen and (min-width: 1200px) {
       margin-top: 0px;
     }
   }
